@@ -1,0 +1,23 @@
+<app-progress-bar
+  [max]="duration()"
+  [value]="progress()"
+/>
+
+<app-header />
+
+<app-question [markdown]="question()" />
+
+<ul class="answer-list">
+  @for (answer of answerList(); track answer) {
+    <li>
+      @let correct = answer === correctAnswer();
+      <app-answer
+        [correct]="correct"
+        [disabled]="disabled()"
+        (clicked)="onAnswerClicked(correct)"
+      >
+        {{ answer }}
+      </app-answer>
+    </li>
+  }
+</ul>

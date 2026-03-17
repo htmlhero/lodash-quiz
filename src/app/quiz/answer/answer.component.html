@@ -1,0 +1,12 @@
+<button
+  type="button"
+  [class]="{
+    button: true,
+    success: correct() && disabled(),
+    error: selected() && !correct() && disabled(),
+    disabled: disabled()
+  }"
+  (click)="onClick()"
+>
+  <code><ng-content /></code>
+</button>

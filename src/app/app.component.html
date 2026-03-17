@@ -1,0 +1,23 @@
+<div class="page">
+  @switch (state()) {
+    @case ('intro') {
+      <app-intro
+        [duration]="duration()"
+        (started)="onStart()"
+      />
+    }
+    @case ('quiz') {
+      <app-quiz
+        [duration]="duration()"
+        (finished)="onFinish($event)"
+      />
+    }
+    @case ('outro') {
+      <app-outro
+        [duration]="duration()"
+        [score]="score()"
+        (started)="onStart()"
+      />
+    }
+  }
+</div>

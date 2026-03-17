@@ -1,0 +1,13 @@
+<app-header />
+
+<app-card>
+  Congratulations! You've successfully completed the quiz. You answered <strong>{{ score() }}</strong> out of
+  <strong>{{ duration() }}</strong> questions correctly.
+</app-card>
+
+<div class="button">
+  <app-button
+    label="Try again"
+    (clicked)="started.emit()"
+  />
+</div>

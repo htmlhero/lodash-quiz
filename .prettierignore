@@ -1,0 +1,11 @@
+/node_modules
+/.angular
+/.generated
+/dist
+
+*.md
+
+src/index.html
+tsconfig.json
+tsconfig.*.json
+angular.json

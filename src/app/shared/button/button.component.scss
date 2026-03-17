@@ -1,0 +1,18 @@
+button {
+  background-color: rgb(13, 110, 253);
+  font: inherit;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  text-align: inherit;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    background-color: rgb(11, 94, 215);
+  }
+}

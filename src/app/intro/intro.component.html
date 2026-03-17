@@ -1,0 +1,19 @@
+<app-header />
+
+<app-card>
+  <p>
+    Do you also often remember that such a method existed in Lodash only after you've written your own implementation?
+    This quiz aims to solve this problem by memorizing Lodash methods in a fun way.
+  </p>
+  <p>
+    You will be presented with {{ duration() }} method descriptions and four possible names. Guess which method matches
+    each description.
+  </p>
+</app-card>
+
+<div class="button">
+  <app-button
+    label="Start quiz"
+    (clicked)="started.emit()"
+  />
+</div>

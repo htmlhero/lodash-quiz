@@ -1,0 +1,14 @@
+:host {
+  height: 0.25rem;
+  background-color: rgb(233, 236, 239);
+  display: block;
+}
+
+.knob {
+  background-color: rgb(13, 110, 253);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: width 1s ease-in-out;
+}
